@@ -31,11 +31,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " LSP
     Plug 'neovim/nvim-lspconfig'
+
     " metals lsp
     Plug 'scalameta/nvim-metals'
 
     Plug 'nvim-lua/completion-nvim'
 
     " Plug 'liuchengxu/vim-which-key'
+
+    Plug 'wakatime/vim-wakatime'
 
     call plug#end()
