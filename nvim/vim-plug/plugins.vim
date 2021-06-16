@@ -30,10 +30,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-startify'
 
     " LSP
-    Plug 'neovim/nvim-lspconfig'
+    "Plug 'neovim/nvim-lspconfig'
 
     " metals lsp
-    Plug 'scalameta/nvim-metals'
+    "plug 'scalameta/nvim-metals'
 
     Plug 'nvim-lua/completion-nvim'
 
