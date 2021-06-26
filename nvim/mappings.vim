@@ -1,9 +1,23 @@
 autocmd VimEnter,WinEnter * let &scrolloff = winheight(0) / 3
 syntax on
-nnoremap <space> :nohlsearch<CR>
+" nnoremap <space> :nohlsearch<CR>
+
+nnoremap <esc> :noh<return><esc>
+
 nnoremap j gj
 nnoremap k gk
-map ; :Files<CR>
+
+" regex change after *
+nnoremap <M-r> :%s///g<Left><Left>
+
+set nocompatible
+" set wildmenu
+set path+=**
+
+map <C-p> :Files<CR>
+" map , :Rg<CR>
+map <space> b :Buffers<CR>
+map <space> g :GFiles<CR>
 
 nmap ss :split<Return><C-w>w
 nmap sv :vsplit<Return><C-w>w
@@ -51,5 +65,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <Leader>o o<Esc>^Da
-nnoremap <Leader>O O<Esc>^Da
+" Telescope
+nnoremap <space>f :Telescope find_files<CR>
+nnoremap <space>g :Telescope live_grep<CR>
+nnoremap <space>b :Telescope buffers<CR>
+nnoremap <space>t :Telescope help_tags<CR>

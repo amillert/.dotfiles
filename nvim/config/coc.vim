@@ -97,13 +97,11 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for rename current word
-nmap <leader>rn <Plug>(coc-rename)
-" Symbol renaming.
-" nmap <leader>rn <Plug>(coc-rename)
+nmap <Leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+xmap <Leader>f  <Plug>(coc-format)
+nmap <Leader>f  <Plug>(coc-format)
 
 augroup mygroup
   autocmd!
@@ -120,14 +118,14 @@ augroup end
 " augroup end
 
 " Applying codeAction to the selected region.
-" Example: `<leader>aap` for current paragraph
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
+" Example: `<Leader>aap` for current paragraph
+xmap <Leader>a  <Plug>(coc-codeaction-selected)
+nmap <Leader>a  <Plug>(coc-codeaction-selected)
 
 " Remap keys for applying codeAction to the current buffer.
-nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <Leader>ac  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <Leader>qf  <Plug>(coc-fix-current)
 
 
 " Use `:Format` to format current buffer
@@ -139,7 +137,7 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 
 " Trigger for code actions
 " Make sure `"codeLens.enable": true` is set in your coc config
-nnoremap <leader>cl :<C-u>call CocActionAsync('codeLensAction')<CR>
+nnoremap <Leader>cl :<C-u>call CocActionAsync('codeLensAction')<CR>
 
 " Mappings for CoCList
 " Show all diagnostics.
@@ -179,17 +177,6 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " Currently used for the formatOnType feature.
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
       \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
-" Toggle panel with Tree Views
-nnoremap <silent> <space>t :<C-u>CocCommand metals.tvp<CR>
-" Toggle Tree View 'metalsPackages'
-nnoremap <silent> <space>tp :<C-u>CocCommand metals.tvp metalsPackages<CR>
-" Toggle Tree View 'metalsCompile'
-nnoremap <silent> <space>tc :<C-u>CocCommand metals.tvp metalsCompile<CR>
-" Toggle Tree View 'metalsBuild'
-nnoremap <silent> <space>tb :<C-u>CocCommand metals.tvp metalsBuild<CR>
-" Reveal current current class (trait or object) in Tree View 'metalsPackages'
-nnoremap <silent> <space>tf :<C-u>CocCommand metals.revealInTreeView metalsPackages<CR>
 
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
@@ -248,5 +235,5 @@ let g:coc_explorer_global_presets = {
 " space e opens explorer
 nmap <space>e :CocCommand explorer<CR>
 " space e opens explorer in floating mode
-nmap <space>f :CocCommand explorer --preset floating<CR>
+" nmap <space>f :CocCommand explorer --preset floating<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif

@@ -1,5 +1,9 @@
 {
   "metals.statusBarEnabled": true,
+  "metals.superMethodLensesEnabled": true,
+  "codeLens.enable": true,
+  "metals.showImplicitArguments": true,
+  "metals.showInferredType": true,
   // "python.linting.statusBarEnabled": true,
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
@@ -7,9 +11,4 @@
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
-  //"explorer.keyMappings": {
-  //  "<cr>": ["expandable?", "expand", "open"],
-  //  "v": "open:vsplit"
-  //},
 }
-

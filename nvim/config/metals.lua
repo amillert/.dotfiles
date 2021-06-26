@@ -30,7 +30,7 @@ nnoremap <silent> ]c          <cmd>lua vim.lsp.diagnostic.goto_next { wrap = fal
 " nvim-lsp Settings
 "-----------------------------------------------------------------------------
 " If you just use the latest stable version, then setting this isn't necessary
-let g:metals_server_version = '0.9.8+10-334e402e-SNAPSHOT'
+" let g:metals_server_version = '0.9.8+10-334e402e-SNAPSHOT'
 
 "-----------------------------------------------------------------------------
 " nvim-metals setup with a few additions such as nvim-completions
