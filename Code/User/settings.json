@@ -1,0 +1,71 @@
+{
+    "editor.rulers": [
+        90
+    ],
+    "editor.fontFamily": "'JetBrains Mono Medium'",
+    "editor.fontLigatures": true,
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "metals.superMethodLensesEnabled": true,
+    "remote.SSH.useLocalServer": false,
+    "remote.SSH.remotePlatform": {
+        "nancy.g5k": "linux"
+    },
+    "vim.neovimUseConfigFile": true,
+    "vim.neovimConfigPath": "/home/devmood/.config/nvim/general/settings.vim",
+    "vim.neovimPath": "/home/devmood/nvim.appimage",
+    "vim.enableNeovim": true,
+    "vim.smartRelativeLine": true,
+    "window.autoDetectHighContrast": false,
+    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.editor.closeEmptyGroups": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "editor.tabSize": 2,
+    "editor.wrappingIndent": "deepIndent",
+    "window.menuBarVisibility": "compact",
+    "zenMode.hideStatusBar": false,
+    "problems.showCurrentInStatus": true,
+    "glassit.alpha": 240, // 232
+    "debug.console.historySuggestions": false,
+    "editor.minimap.enabled": false,
+    "debug.focusWindowOnBreak": false,
+    "bracketPairColorizer.colorMode": "Independent",
+    "bracketPairColorizer.forceUniqueOpeningColor": true,
+    "debug.openDebug": "neverOpen",
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "terminal.integrated.scrollback": 100000,
+    "terminal.integrated.profiles.linux": {
+        "tmux": {
+            "path": "/usr/bin/tmux",
+            "args": [
+                "new-session",
+                "-A",
+                "-s",
+                "vs-${workspaceFolderBasename}"
+            ]
+        }
+    },
+    // "terminal.integrated.profiles.linux": {
+    //     "zsh": {
+    //         "path": "/bin/zsh",
+    //         "args": [
+    //             "-c",
+    //             "sess=$(basename $(pwd))-vscode; tmux new-window -t $sess; tmux new-session -A -D -s $sess"
+    //         ]
+    //     },
+    // },
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.defaultProfile.linux": "tmux",
+    "redhat.telemetry.enabled": false,
+    "material-icon-theme.opacity": null,
+    "thunder-client.codeSnippetLanguage": "cs-httpclient"
+}
