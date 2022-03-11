@@ -78,6 +78,7 @@ return packer.startup(function(use)
   -- development
   use "wakatime/vim-wakatime"
   use "scalameta/nvim-metals"
+  use "fatih/vim-go"
 
 
   -- snippets

@@ -254,6 +254,11 @@ _G.packer_plugins = {
     path = "/home/devmood/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/home/devmood/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
+  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/devmood/.local/share/nvim/site/pack/packer/start/vim-vsnip",
